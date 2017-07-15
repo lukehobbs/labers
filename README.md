@@ -18,7 +18,7 @@ go get -u github.com/lukehobbs/labers
 
 First, create a [GitHub token][tokens] with the appropriate scope. Then run `labers configure` to set up the environment file. You will be prompted for a domain name if you wish to interact with a Github Enterprise instance. After running `labers configure`, an environment file `labers.env` will be created in your current working directory.
 
-Where `labers.env` looks like: 
+Where `labers.env` looks like:
 ```
 GITHUB_TOKEN: 5555535553bbb632ba32e87d349418ca30a9d5e1f
 GITHUB_URL: github.h0bbs.com
@@ -41,11 +41,6 @@ labers cp github://owner/name destination
 To copy labels from a repository to another repository:
 ```
 labers cp github://source_owner/source_name github://destination_owner/destination_name
-```
-
-For example,
-```
-labers cp github://lukehobbs/labers github://lukehobbs/newrepo
 ```
 
 To copy labels from a local file to a repository:
