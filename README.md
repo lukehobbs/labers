@@ -31,7 +31,7 @@ GITHUB_URL: github.h0bbs.com
 
 ### Saving labels
 
-To save existing labels from a repository and into a file:
+To save existing labels from a repository into a file:
 ```
 labers cp github://owner/name destination
 ```
