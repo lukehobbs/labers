@@ -15,3 +15,7 @@
 
 # Gogland Directories
 .idea/
+.idea/*
+
+# Labers
+labers.env
