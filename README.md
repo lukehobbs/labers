@@ -16,7 +16,9 @@ go get -u github.com/lukehobbs/labers
 
 ## Usage
 
-First, create an environment file named `labers.env`. You will need to create a [GitHub token][tokens] and optionally include the domain name if you wish to interact with a Github Enterprise instance.
+First, create a [GitHub token][tokens] with the appropriate scope. Then run `labers configure` to set up the environment file. You will be prompted for a domain name if you wish to interact with a Github Enterprise instance. After running `labers configure`, an environment file `labers.env` will be created in your current working directory.
+
+Where `labers.env` looks like: 
 ```
 GITHUB_TOKEN: 5555535553bbb632ba32e87d349418ca30a9d5e1f
 GITHUB_URL: github.h0bbs.com
