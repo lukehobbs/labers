@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/lukehobbs/labers)](https://goreportcard.com/report/github.com/lukehobbs/labers)
+
 # Labers
 
 A  Github Enterprise friendly CLI tool for managing Github issue labels.
