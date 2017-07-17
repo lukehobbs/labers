@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/lukehobbs/labers)](https://goreportcard.com/report/github.com/lukehobbs/labers)
+
 # Labers
 
 A  Github Enterprise friendly CLI tool for managing Github issue labels.
@@ -16,7 +18,9 @@ go get -u github.com/lukehobbs/labers
 
 ## Usage
 
-First, create an environment file named `labers.env`. You will need to create a [GitHub token][tokens] and optionally include the domain name if you wish to interact with a Github Enterprise instance.
+First, create a [GitHub token][tokens] with the appropriate scope. Then run `labers configure` to set up the environment file. You will be prompted for a domain name if you wish to interact with a Github Enterprise instance. After running `labers configure`, an environment file `labers.env` will be created in your current working directory.
+
+Where `labers.env` looks like:
 ```
 GITHUB_TOKEN: 5555535553bbb632ba32e87d349418ca30a9d5e1f
 GITHUB_URL: github.h0bbs.com
@@ -29,7 +33,7 @@ GITHUB_URL: github.h0bbs.com
 
 ### Saving labels
 
-To save existing labels from a repository and into a file:
+To save existing labels from a repository into a file:
 ```
 labers cp github://owner/name destination
 ```
@@ -39,11 +43,6 @@ labers cp github://owner/name destination
 To copy labels from a repository to another repository:
 ```
 labers cp github://source_owner/source_name github://destination_owner/destination_name
-```
-
-For example,
-```
-labers cp github://lukehobbs/labers github://lukehobbs/newrepo
 ```
 
 To copy labels from a local file to a repository:
