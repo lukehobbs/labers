@@ -41,7 +41,7 @@ func getClient() (*github.Client, context.Context) {
 	oauthClient := oauth2.NewClient(ctx, oauth2.StaticTokenSource(&tok))
 	client := github.NewClient(oauthClient)
 	if dotEnv["GITHUB_URL"] != "" {
-		client.BaseURL = &url.URL{Scheme: "https", Host: dotEnv["GITHUB_URL"], Path: "api/v3"}
+		client.BaseURL = &url.URL{Scheme: "https", Host: dotEnv["GITHUB_URL"], Path: "api/v3/"}
 	}
 	return client, ctx
 }
