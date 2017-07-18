@@ -14,6 +14,13 @@ Or use `go get`:
 go get -u github.com/lukehobbs/labers
 ```
 
+Or clone this repo and `go install` or alternatively build from source like:
+
+```
+go build
+./labers --help
+```
+
 [release]: https://github.com/lukehobbs/labers/releases
 
 ## Usage
